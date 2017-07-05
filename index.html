@@ -4,6 +4,7 @@
         <title></title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link href="commons/css/reset.css" rel="stylesheet" media="all">
         <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="all">
         <link href="commons/css/style.css" rel="stylesheet" media="all">
     </head>
@@ -11,10 +12,83 @@
 
     <div class="container-fluid">
         <header id="home">
+            <div class="head-block">
+                <div class="logo-menu-top">
+                    <div class="logo"><a href="#home" class="">MoGo</a></div>
+                    <div class="menu">
+                        <div class="icon-close">
+                            <img src="commons/images/close-menu.png" alt="close menu">
+                        </div>
+                        <ul id="menu">
+                            <li><a href="#" class="top-slider-menu__li">About</a></li>
+                            <li><a href="#" class="top-slider-menu__li">Service</a></li>
+                            <li><a href="#" class="top-slider-menu__li">Work</a></li>
+                            <li><a href="#" class="top-slider-menu__li">Blog</a></li>
+                            <li><a href="#" class="top-slider-menu__li">Contact</a></li>
+                            <li><a href="#" class="top-slider-menu__li-ico"><div class="menu-cart-icon"></div></a></li>
+                            <li><a href="#" class="top-slider-menu__li-ico"><div class="menu-search-icon"></div></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="icon-menu">
+                    <img src="commons/images/open-menu.png" alt="open menu">
+                </div>
+            </div>
         </header>
+        <section class="top-slideshow-block">
+            <div class="awSlider">
+                <div  class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target=".carousel" data-slide-to="0" class="active"><div class="carousel-indicators_li__bg"></div><div class="carousel-indicators_li__bg-active1"></div><p class="carousel-indicators_title"><span>01</span> Intro </p></li>
+                        <li data-target=".carousel" data-slide-to="1"><div class="carousel-indicators_li__bg"></div><div class="carousel-indicators_li__bg-active2"></div><p class="carousel-indicators_title"><span>02</span> Work  </p></li>
+                        <li data-target=".carousel" data-slide-to="2"><div class="carousel-indicators_li__bg"></div><div class="carousel-indicators_li__bg-active3"></div><p class="carousel-indicators_title"><span>03</span> About  </p></li>
+                        <li data-target=".carousel" data-slide-to="3"><div class="carousel-indicators_li__bg"></div><div class="carousel-indicators_li__bg-active4"></div><p class="carousel-indicators_title"><span>04</span> Contacts</p></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <div class="item_block">
+                                <h2 class="item_block-title__h2">Creative Template</h2>
+                                <h1 class="item_block-title__h1">Welcome<br> to MoGo</h1>
+                                <hr class="top-slideshow_item-line">
+                                <a href="#">Learn more</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_block">
+                                <h2 class="item_block-title__h2">Creative Template</h2>
+                                <h1 class="item_block-title__h1">Welcome<br> to MoGo</h1>
+                                <hr class="top-slideshow_item-line">
+                                <a href="#">Learn more</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_block">
+                                <h2 class="item_block-title__h2">Creative Template</h2>
+                                <h1 class="item_block-title__h1">Welcome<br> to MoGo</h1>
+                                <hr class="top-slideshow_item-line">
+                                <a href="#">Learn more</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_block">
+                                <h2 class="item_block-title__h2">Creative Template</h2>
+                                <h1 class="item_block-title__h1">Welcome<br> to MoGo</h1>
+                                <hr class="top-slideshow_item-line">
+                                <a href="#">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
 
     </div>
-    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="commons/js/bootstrap.min.js"></script>
     <script src="commons/js/script-min.js"></script>
 
  </body>

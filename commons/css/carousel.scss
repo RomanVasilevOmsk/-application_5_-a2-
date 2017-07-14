@@ -1,0 +1,216 @@
+
+
+/*carouseller.js 0.32b https://github.com/shrue348/responsive.carouseller Open source under the MIT License. Copyright © 2015-2017 Aleksander Alekseev All rights reserved.*/
+.carouseller:before, .carouseller:after {  content: " ";  display: table;}
+.carouseller:after { clear: both;}
+.carouseller { position: relative;}
+
+.carouseller [class*="car__"]{
+  display: inline-block;
+  position: relative;
+  margin-left: 0.2564102564102564% !important;
+  *margin-left: 0.25109110747408616% !important;
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.carouseller [class*="car__"]:first-child  { margin-left: 0 !important;}
+.carouseller [class*="car__"]:nth-child(n+7) { display: none;}
+
+.carouseller .car__by5 { width: 1.793789743589745%;}
+.carouseller .car__12 { width: 10%;}
+.carouseller .car__6 { width: 4.8837948717948715%;}
+.carouseller .car__4 { width: 3.1703931623931625%;}
+.carouseller .car__3 { width: 2.3136923076923077%;}
+.carouseller .car__2 { width: 1.452991452991453%;}
+.carouseller .car__1 { width: 0.5982905982905983%;}
+
+.carouseller .carouseller__list { position: relative; width: 997.4358974358974%;}
+.carouseller .carouseller__wrap { overflow: hidden; position: relative; margin: 0 35px}
+
+
+
+/*------Responsive-----------*/
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 856px) and (max-width: 1260px) {
+  .carouseller .car__by5,
+  .carouseller .car__6,
+  .carouseller .car__4,
+  .carouseller .car__3,
+  .carouseller .car__1 { width: 4.8717948717948715%;}
+  .carouseller .car__12{
+
+  }
+  .carouseller .car__2{
+    width: 3.1703931623931625%;
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 856px) {
+  .carouseller .car__by5,
+  .carouseller .car__6,
+  .carouseller .car__4,
+  .carouseller .car__3,
+  .carouseller .car__2,
+  .carouseller .car__1 { width: 10%;}
+  .carouseller .car__12{
+
+  }
+  .carouseller .car__2{
+    width: 4.8837948717948715%;
+  }
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .carouseller .car__by5,
+  .carouseller .car__6,
+  .carouseller .car__4,
+  .carouseller .car__3,
+  .carouseller .car__2,
+  .carouseller .car__1 { width: 10%;}
+  .carouseller .car__12{
+
+  }
+}
+
+
+
+/* This can be deleted */
+
+h1 {font-size: 40px; margin-bottom: 30px;}
+.carouseller { margin-bottom: 20px;}
+
+
+.ri-grid{
+  margin: 30px auto 30px;
+  position: relative;
+  height: auto;
+}
+
+.ri-grid ul {
+  list-style: none;
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Clear floats by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+
+.ri-grid ul:before,
+.ri-grid ul:after{
+  content: '';
+  display: table;
+}
+
+.ri-grid ul:after {
+  clear: both;
+}
+
+.ri-grid ul {
+  zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+.ri-grid ul li {
+  -webkit-perspective: 400px;
+  -moz-perspective: 400px;
+  -o-perspective: 400px;
+  -ms-perspective: 400px;
+  perspective: 400px;
+  margin: 0;
+  padding: 0;
+  float: left;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  background: #000;
+}
+
+.ri-grid ul li a{
+  display: block;
+  outline: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #333;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* Grid wrapper sizes */
+.ri-grid-size-1{
+  width: 100%;
+}
+.ri-grid-size-2{
+  width: 100%;
+}
+.ri-grid-size-3{
+  width: 100%;
+  margin-top: 0px;
+}
+
+/* Shadow style */
+.ri-shadow:after,
+.ri-shadow:before{
+  content: "";
+  position: absolute;
+  z-index: -2;
+  bottom: 15px;
+  left: 10px;
+  width: 100%;
+  height: 20%;
+  max-width: 300px;
+  max-height: 100px;
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+.ri-shadow:after{
+  right: 10px;
+  left: auto;
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  transform: rotate(3deg);
+}
+
+.ri-grid-loading:after,
+.ri-grid-loading:before{
+  display: none;
+}
+
+.ri-loading-image{
+  display: none;
+}
+
+.ri-grid-loading .ri-loading-image{
+  position: relative;
+  width: 290px;
+  height: 240px;
+  left: 50%;
+  margin: 100px 0 0 -15px;
+  display: block;
+}

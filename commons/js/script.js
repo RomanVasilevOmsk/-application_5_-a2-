@@ -88,13 +88,6 @@ $( function() {
 
 /* carouseller */
 //carousel-works
-$(function() {
-    $('#third').carouseller({
-        // scrollSpeed: 3000,
-        // autoScrollDelay: 1600,
-        easing: 'linear'
-    });
-});
 
 $(function() {
     $('#third2').carouseller({
@@ -111,11 +104,5 @@ $(function() {
         easing: 'linear'
     });
 });
-$(function() {
-    $('#third4').carouseller({
-        // scrollSpeed: 3000,
-        // autoScrollDelay: 1600,
-        easing: 'linear'
-    });
-});
+
 /* carouseller */

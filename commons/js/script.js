@@ -5,7 +5,22 @@ $('div.awSlider .carousel').carousel({
 });
 
 
+//Якорь
+$(document).ready(function(){
+    $("#menu").on("click","a", function (event) {
+        //отменяем стандартную обработку нажатия по ссылке
+        event.preventDefault();
 
+        //забираем идентификатор бока с атрибута href
+        var id  = $(this).attr('href'),
+
+            //узнаем высоту от начала страницы до блока на который ссылается якорь
+            top = $(id).offset().top;
+
+        //анимируем переход на расстояние - top за 1500 мс
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+});
 
 // Mobile menu
 /* Open menu */
@@ -18,7 +33,7 @@ var main = function() {
 
 
     /* Close menu */
-    $('.icon-close,.top-slider-close, .services-close, .shop-close, .portfolio-close, .cooperation-close, .reviews-close, .contacts-close').click(function() { //выбираем класс icon-close и метод click
+    $('.icon-close,.top-slider-menu__li, .top-slider-menu__li-ico').click(function() { //выбираем класс icon-close и метод click
         $('.menu').animate({left: '-100%'}, 200);
         $('body').animate({left: '0px'}, 200);
     });
@@ -106,3 +121,4 @@ $(function() {
 });
 
 /* carouseller */
+
